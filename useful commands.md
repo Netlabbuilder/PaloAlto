@@ -67,6 +67,28 @@ admin@Netlab-PA>
 
 <details>
 
+<summary>show dhcp client mgmt-interface-state</summary>
+
+```
+admin@Netlab-PA> show dhcp client mgmt-interface-state
+
+hostname: Netlab-PA
+ip: 10.255.255.128
+netmask: 255.255.255.0
+default-gateway: 10.255.255.1
+expiry-time: 2025/06/29 05:48:28 PDT
+lease-time: 0 days, 00:30:00
+dhcp-server: 10.255.255.254
+domain: unknown
+dns-server: unknown
+
+admin@Netlab-PA>
+```
+
+</details>
+
+<details>
+  
 <summary>request dhcp client management-interface renew</summary>
 
 ```
@@ -78,5 +100,36 @@ DHCP: new ip 10.255.255.128 : mask 255.255.255.0
 Renew succeeded
 admin@Netlab-PA>
 ```
+</details>
 
+<details>
+  
+<summary>show interface all</summary>
+
+```
+admin@Netlab-PA> show interface all
+
+total configured hardware interfaces: 4
+
+name                    id    speed/duplex/state            mac address
+--------------------------------------------------------------------------------
+ethernet1/1             16    1000/full/up                  00:0c:29:c9:b5:c1
+ethernet1/2             17    1000/full/up                  00:0c:29:c9:b5:d5
+ethernet1/3             18    1000/full/up                  00:0c:29:c9:b5:df
+ethernet1/4             19    1000/full/up                  00:0c:29:c9:b5:cb
+
+aggregation groups: 0
+
+
+total configured logical interfaces: 4
+
+name                id    vsys zone             forwarding               tag    address                                
+------------------- ----- ---- ---------------- ------------------------ ------ ------------------
+ethernet1/1         16    1    Untrusted-Outsid vr:default               0      13.1.87.6/29
+ethernet1/2         17    1    Untrused-DMZ     vr:default               0      192.168.255.1/24
+ethernet1/3         18    1    Trusted-LAN      vr:default               0      10.0.1.1/24
+ethernet1/4         19    1    Trusted-LAN      vr:default               0      10.0.2.1/24
+
+admin@Netlab-PA>
+```
 </details>
