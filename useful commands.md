@@ -126,9 +126,9 @@ total configured logical interfaces: 4
 name                id    vsys zone             forwarding               tag    address                                
 ------------------- ----- ---- ---------------- ------------------------ ------ ------------------
 ethernet1/1         16    1    Untrusted-Outsid vr:default               0      13.1.87.6/29
-ethernet1/2         17    1    Untrused-DMZ     vr:default               0      192.168.255.1/24
-ethernet1/3         18    1    Trusted-LAN      vr:default               0      10.0.1.1/24
-ethernet1/4         19    1    Trusted-LAN      vr:default               0      10.0.2.1/24
+ethernet1/2         17    1    Untrused-DMZ     vr:default               0      192.168.255.5/24
+ethernet1/3         18    1    Trusted-LAN      vr:default               0      10.0.1.5/24
+ethernet1/4         19    1    Trusted-LAN      vr:default               0      10.0.2.5/24
 
 admin@Netlab-PA>
 ```
