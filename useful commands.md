@@ -132,4 +132,17 @@ ethernet1/4         19    1    Trusted-LAN      vr:default               0      
 
 admin@Netlab-PA>
 ```
+
+</details>
+
+<details>
+  
+<summary>set cli config-output-format set</summary>
+
+</details>
+
+<details>
+  
+<summary>set cli config-output-format json</summary>
+
 </details>
